@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>JS Timer with Milliseconds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <h1 id="display">00:00:00:000</h1>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Function Timer</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <h1>StopWatch</h1>
+    <div class="time-display" id="display">00:00:00.000</div>
+    <div class="buttons">
+    <button onclick="startStop()">Start</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="lap()">Lap</button>
+    <button onclick="saveTime()">Save</button>
+    <br>
+    <input type="number" id="countdownMin" placeholder="Min">
+    <input type="number" id="countdownSec" placeholder="Sec">
+    <button onclick="startCountdown()">Countdown</button>
+
+    <div class="lap-list" id="laps"><h3>Laps:</h3></div>
+    <hr>
+    <div class="records" id="records"><h3>Saved Records:</h3></div>
+  </div>
+<script src="script.js"></script>
+  
+</body>
+</html>
